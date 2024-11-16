@@ -12,7 +12,7 @@ import FmdGoodIcon from '@mui/icons-material/FmdGood';
 
 function App() {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <header className="bg-[#082455] flex items-center md:justify-around">
         <div className='p-2 flex items-center gap-1'>
             <img className='w-20' src={Logo} alt='logo'/>
