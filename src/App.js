@@ -7,7 +7,6 @@ import { CardCarousel } from './components/Carousel';
 import { CardService } from './components/CardService';
 import { MarqueCarousel } from './components/MarqueeCard';
 import Suzu from './assets/suzu-logo.svg';
-import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import {CardEvent} from './components/CarouselEvent';
 import MicIcon from '@mui/icons-material/Mic';
 
