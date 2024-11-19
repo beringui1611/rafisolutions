@@ -12,6 +12,59 @@ export const CardService = () => {
 
     return (
         <div className="h-auto bg-[#082455]">
+            <section className=''>
+                <h3 className='text-white text-center pt-2 font-bold'>
+                    Mentorias Personalizadas
+                </h3>
+
+                <p className='p-5 text-sm text-slate-400 '>
+                    Transforme suas dúvidas em conhecimento prático!
+                    Minhas mentorias são pensadas para quem quer aprender sobre blockchain, 
+                    criptoativos e Web3 de forma guiada e estruturada. Durante as sessões, 
+                    desenvolvemos um plano totalmente personalizado, adaptado ao seu nível de 
+                    conhecimento e aos seus objetivos, seja você um profissional que busca se
+                    especializar, um empreendedor com uma ideia inovadora ou alguém em transição de carreira.
+                </p>
+                
+                
+                <div className='p-5 flex flex-col gap-2 text-sm text-slate-400'>
+                    <p className='text-white font-bold'>O que falamos em nossas mentorias?</p>
+                    <li>
+                        Explicação clara de conceitos fundamentais como blockchain, 
+                        tokenização e smart contracts.
+                    </li>
+                    <li>
+                        Insights sobre aplicações práticas de Web3 e 
+                        criptoativos em diferentes setores.
+                    </li>
+                    <li>
+                        Planejamento estratégico para você aplicar 
+                        esses conhecimentos em sua carreira ou negócio.
+                    </li>
+                </div>
+
+                <div className='p-5 flex flex-col gap-2 text-sm text-slate-400'>
+                    <p className='text-white font-bold'>Para quem é?</p>
+                    <li>
+                        Profissionais que desejam se destacar em mercados emergentes.
+                    </li>
+                    <li>
+                        Empreendedores que querem utilizar blockchain em seus negócios.
+                    </li>
+                    <li>
+                        Iniciantes que precisam de uma base sólida e confiável para começar.
+                    </li>
+                </div>
+
+                <div className='p-5 flex flex-col gap-2 text-sm text-slate-400'>
+                    <p className='text-white font-bold'>Por que escolher minhas mentorias?</p>
+                    <ul>
+                        Combinando teoria e prática, vou te ajudar a entender esses conceitos de forma 
+                        descomplicada e te orientar sobre como aplicá-los para alcançar seus objetivos.
+                    </ul>
+                </div>
+            </section>
+
             <img className='w-32 absolute' src={Element} alt='element-3d'/>
             <h3 className='text-center pt-20 text-xl font-bold text-white ml-10'>Nossos serviços</h3>
              <div>

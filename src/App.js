@@ -8,7 +8,8 @@ import { CardService } from './components/CardService';
 import { MarqueCarousel } from './components/MarqueeCard';
 import Suzu from './assets/suzu-logo.svg';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
-
+import {CardEvent} from './components/CarouselEvent';
+import MicIcon from '@mui/icons-material/Mic';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         </div>
           <a
             href='https://wa.me/5521987495304?text=Olá!%20👋%20Seja%20bem-vindo(a)%20à%20RaFi%20Blockchain%20Solutions.%20🚀%20Estamos%20prontos%20para%20ajudar%20com%20suas%20necessidades%20em%20blockchain%20e%20tecnologia.'
-            className='bg-white flex justify-center items-center h-10 p-1 text-sm rounded-md font-semibold shadow-lg ml-10 text-center'>
+            className='bg-white flex justify-center items-center h-10 p-1 text-sm rounded-md font-semibold shadow-lg ml-5 text-center'>
               Entrar em Contato
           </a>
       </header>
@@ -58,17 +59,24 @@ function App() {
       <section className='h-auto bg-[#082455] pb-20 md:pb-20'>
           <div className='flex flex-col gap-2 pt-5 justify-center items-center md:flex-row'>
              <img className='w-48 rounded-xl ml-5 md:w-auto' src={Profile} alt='me'/>
-             <p className="text-sm text-center px-20 text-slate-400 md:text-3xl w-[500px]">
-                Sou Rafael Figueiredo, advogado, consultor e professor com foco em Direito, Tecnologia e 
-                Blockchain. Minha missão é transformar a inovação tecnológica em soluções práticas 
-                que beneficiem pessoas e empresas, explorando o potencial de tecnologias emergentes 
-                como blockchain, Web3 e criptoativos.
-              Com uma trajetória marcada por projetos relevantes e uma formação sólida, 
-              estou aqui para ajudar você ou sua empresa a navegar e aproveitar as oportunidades do universo blockchain
+             <p className="text-sm px-20 text-slate-400 md:text-3xl w-[500px]">
+             Sou Rafael Figueiredo, Advogado, Consultor e Professor apaixonado por Direito, Tecnologia e Blockchain. Minha missão é transformar inovações como blockchain, Web3 e criptoativos em soluções práticas para pessoas e empresas.
+              Com mais de 15 anos de experiência, atuo em projetos que conectam Direito e Tecnologia, promovendo eficiência e inovação.
+              <br/>
+              <br/>
+              <p className='text-white font-bold text-sm'>Formação Acadêmica:</p>
+              <br/>
+              <li>Mestrando em Direito e Tecnologia – FGV/SP</li>
+              <li>Pós-Graduado em Direito Digital – ITS Rio/UERJ</li>
+              <li>Certificado CIPP/E – IAPP</li>
+              <li>Bitcoin, DeFi e ReFi Talent – Frankfurt School Blockchain Center</li>
+              <li>Pesquisador IBChain e membro do GITEC</li>
+              <li>ECOTA Fellow</li>
+              <p className='text-white mt-5'>Estou aqui para ajudar você ou sua empresa a navegar no universo blockchain, transformando desafios em oportunidades.</p>
              </p>
           </div>
           <div className="flex ml-3 gap-20 md:justify-center md:mt-5">
-            <a className="p-1 w-32 text-center text-white flex items-center gap-2 mt-5">
+            <a href='https://www.instagram.com/_rafaelfigueiredo/' className="p-1 w-32 text-center text-white flex items-center gap-2 mt-5">
                   <InstagramIcon className='text-white'/>
                   @_rafaelfigueiredo
             </a>
@@ -98,31 +106,62 @@ function App() {
           <div className='w-full'>
               <CardCarousel/>
           </div>
+
+        </section>
+
+        <section className='flex flex-col justify-center'>
+           <CardEvent/>
         </section>
 
         <section className='h-auto bg-[#082455] flex flex-col items-center'>
             <CardService/>
-           
-            <p className='text-white font-bold'>Nossos parceiros</p>
+            <section className='bg-[#082455]'>
+           <h4 className='text-white font-bold p-2'>Palestras Personalizadas</h4>
+           <p className='p-2 text-sm text-slate-400'>
+            Além das mentorias e consultorias, também oferecemos palestras que 
+            combinam conhecimento técnico e insights práticos para inspirar equipes e 
+            públicos diversos. Confira mais sobre Palestras em Eventos Relevantes em nossa seção dedicada.
+            Por que minhas palestras fazem a diferença?
+            <br/>
+            <br/>
+            Cada apresentação é adaptada para o público do evento, 
+            indo além da teoria e trazendo exemplos práticos, 
+            tendências globais e insights que conectam tecnologia ao mercado e à sociedade. Meu objetivo é 
+            sempre inspirar, ensinar e provocar novas ideias.
+           </p>
+
+           <p className='flex p-2 items-center gap-2 text-white font-bold'>
+             <MicIcon/>
+             Quer levar minha palestra para o seu evento?
+           </p>
+
+           <p className='p-2 text-slate-400 text-sm'>
+              Entre em contato para discutirmos temas, 
+              formatos e como posso agregar valor ao seu público. 
+              Vamos construir juntos momentos de aprendizado e transformação!
+           </p>
         </section>
-         
+
+          <p className='text-white font-bold'>Nossos parceiros</p>
+
+        </section>
          
         <section className='flex flex-col justify-center items-center'>
             <MarqueCarousel/>
         </section>
 
-        <section className='bg-[#082455] flex justify-center flex-col items-center pt-5 gap-2'>
+
+        <footer className='bg-[#082455] w-screen'>
+           <div>
+              <p className='text-white text-sm font-semibold p-5'>RaFi Blockchain Solutions – Transformando inovação em soluções reais.</p>
+           </div>
+           <section className='bg-[#082455] flex justify-center flex-col items-center pt-5 gap-2'>
            <p className='text-white font-bold'>Apoiado Por</p>
            <div className='flex items-center gap-2 text-white font-semibold text-sm'>
               <img className='w-7' src={Suzu} alt='icon-suzuverse'/>
               <a href='https://suzuverse.com/pt/'>SuzuVerse</a>
            </div>
         </section>
-
-        <footer className='bg-[#082455] w-screen'>
-           <div>
-              <p className='text-white text-sm font-semibold p-5'>RaFi Blockchain Solutions – Transformando inovação em soluções reais.</p>
-           </div>
            <article className='flex flex-col items-center justify-center w-full'>
 
               <div className='flex gap-20 mb-10 mt-5'>
@@ -143,17 +182,12 @@ function App() {
                         <a className='flex' href=' https://www.linkedin.com/in/rafaellima01/ '>
                         <LinkedInIcon/> Linkedin
                         </a>
-                        <a className='flex'>
+                        <a href='https://www.instagram.com/_rafaelfigueiredo/' className='flex'>
                         <InstagramIcon/> Instagram
                         </a>
                     </div>
                  </article>
 
-              </div>
-
-              <div className='flex flex-col items-center mb-10'>
-                 <p className='text-white text-sm p-2 text-center'> <FmdGoodIcon/>Endereço: Avenida Bartolomeu Mitre 1084, Leblon, Rio de Janeiro, RJ</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.254550772223!2d-43.22482700347165!3d-22.97766521114945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5b06a5c1b2b%3A0xf6c7b4c75dd4a463!2sAv.%20Bartolomeu%20Mitre%2C%201084%20-%20Lagoa%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022431-004!5e0!3m2!1spt-BR!2sbr!4v1731799370555!5m2!1spt-BR!2sbr" width="200" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               
               <p className='text-slate-400 text-sm text-center'>Vamos construir o futuro juntos? Entre em contato conosco para transformar suas ideias em realidade.</p>
