@@ -1,4 +1,4 @@
-import Logo from './assets/logo.png';
+import Logo from './assets/logofull.png';
 import Banner from './assets/banner.png';
 import Profile from './assets/profile.jpeg';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -13,24 +13,13 @@ import MicIcon from '@mui/icons-material/Mic';
 function App() {
   return (
     <div className='overflow-hidden'>
-      <header className="bg-[#082455] flex items-center md:justify-around">
+      <header className="bg-white flex items-center justify-around md:justify-around">
         <div className='p-2 flex items-center gap-1'>
             <img className='w-20' src={Logo} alt='logo'/>
-            <div className='flex gap-2'>
-              <h3 className='text-white text-xl font-bold text-center'>
-                RaFi 
-              
-              </h3>
-              <div className='h-26 bg-white w-[1px]'></div>
-              <span className='text-white text-[9px] font-bold'>
-                Blockchain <br/> Solutions
-              </span>
-            </div>
-
         </div>
           <a
             href='https://wa.me/5521987495304?text=Olá!%20👋%20Seja%20bem-vindo(a)%20à%20RaFi%20Blockchain%20Solutions.%20🚀%20Estamos%20prontos%20para%20ajudar%20com%20suas%20necessidades%20em%20blockchain%20e%20tecnologia.'
-            className='bg-white flex justify-center items-center h-10 p-1 text-sm rounded-md font-semibold shadow-lg ml-5 text-center'>
+            className='bg-[#082455] text-white flex justify-center items-center h-10 p-1 text-sm rounded-md font-semibold shadow-lg ml-5 text-center'>
               Entrar em Contato
           </a>
       </header>
