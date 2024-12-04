@@ -159,7 +159,7 @@ function App() {
                     <div className='text-sm p-1 text-slate-400 flex flex-col'>
                         <a href='mailto:rafael@rafi.solutions'>rafael@rafi.solutions</a>
                         <a href='https://wa.me/5521987495304?text=Olá!%20👋%20Seja%20bem-vindo(a)%20à%20RaFi%20Blockchain%20Solutions.%20🚀%20Estamos%20prontos%20para%20ajudar%20com%20suas%20necessidades%20em%20blockchain%20e%20tecnologia.'>
-                         +55 21 98749-5304
+                         +55 21 97358-1528
                         </a>
                     </div>
                  </article>
